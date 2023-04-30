@@ -1,5 +1,126 @@
-<script>
-    <!--
-    document.write(unescape("%3C%21DOCTYPE%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%3Ctitle%3EAbout%20Us%20-%20Sky%20Logistic%3C/title%3E%0A%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1%22%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//fonts.googleapis.com/css2%3Ffamily%3DMaterial+Symbols+Outlined%3Aopsz%2Cwght%2CFILL%2CGRAD@20..48%2C100..700%2C0..1%2C-50..200%22%20/%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//www.w3schools.com/w3css/4/w3.css%22%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//fonts.googleapis.com/css%3Ffamily%3DRaleway%22%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E%0A%3Cstyle%3E%0A%23navbar-toggle%7B%0A%20%20%20%20padding-right%3A20px%3B%0A%7D%0A.material-symbols-outlined%20%7B%0A%20%20font-variation-settings%3A%0A%20%20%27FILL%27%200%2C%0A%20%20%27wght%27%20400%2C%0A%20%20%27GRAD%27%200%2C%0A%20%20%27opsz%27%2048%0A%7D%0Abody%2Ch1%2Ch2%2Ch3%2Ch4%2Ch5%2Ch6%20%7Bfont-family%3A%20%22Raleway%22%2C%20sans-serif%7D%0Ah1%2Ch2%2Ch3%2Ch4%2Ch5%2Ch6%20%7B%0A%20%20padding-left%3A%2050px%3B%0A%7D%0Abody%2C%20html%20%7B%0A%20%20height%3A%20100%25%3B%0A%20%20line-height%3A%201.8%3B%0A%7D%0A%0A%20%23header%2C%20body%7B%0A%20%20%20color%3Ablack%20%21important%3B%0A%20%7D%0A%20%23button-anim%20%7B%0A%20%20%20%20font-family%3A%20Raleway%20%21important%3B%0A%20%20--c%3A%20%20%23d19b68%3B%20/*%20the%20color*/%0A%20%20color%3A%23000%3B%0A%20%20box-shadow%3A%200%200%200%20.1em%20inset%20var%28--c%29%3B%20%0A%20%20--_g%3A%20linear-gradient%28var%28--c%29%200%200%29%20no-repeat%3B%0A%20%20background%3A%20%0A%20%20%20%20var%28--_g%29%20calc%28var%28--_p%2C0%25%29%20-%20100%25%29%200%25%2C%0A%20%20%20%20var%28--_g%29%20calc%28200%25%20-%20var%28--_p%2C0%25%29%29%200%25%2C%0A%20%20%20%20var%28--_g%29%20calc%28var%28--_p%2C0%25%29%20-%20100%25%29%20100%25%2C%0A%20%20%20%20var%28--_g%29%20calc%28200%25%20-%20var%28--_p%2C0%25%29%29%20100%25%3B%0A%20%20background-size%3A%2050.5%25%20calc%28var%28--_p%2C0%25%29/2%20+%20.5%25%29%3B%0A%20%20outline-offset%3A%20.1em%3B%0A%20%20transition%3A%20background-size%20.4s%2C%20background-position%200s%20.4s%3B%0A%7D%0A%23button-anim%3Ahover%20%7B%0A%20%20--_p%3A%20100%25%3B%0A%20%20transition%3A%20background-position%20.4s%2C%20background-size%200s%3B%0A%20%20color%3A%23fff%3B%0A%7D%0A%23button-anim%3Aactive%20%7B%0A%20%20box-shadow%3A%200%200%209e9q%20inset%20%230009%3B%20%0A%20%20background-color%3A%20var%28--c%29%3B%0A%20%20color%3A%20%23fff%3B%0A%7D%0A%0A%23button-anim%20%7B%0A%20%20font-family%3A%20system-ui%2C%20sans-serif%3B%0A%20%20font-size%3A%201rem%3B%0A%20%20cursor%3A%20pointer%3B%0A%20%20padding%3A%20.1em%20.6em%3B%20%20%0A%20%20border%3A%20none%3B%0A%7D%0A%3C/style%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%20%20%3Cdiv%20class%3D%22w3-top%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22w3-bar%20w3-white%20w3-card%22%20id%3D%22myNavbar%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22w3-right%20w3-hide-small%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22/introduction/%22%20class%3D%22w3-bar-item%20w3-button%22%3EINTRODUCTION%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22/about-us/%22%20class%3D%22w3-bar-item%20w3-button%22%3E%3C/i%3E%20ABOUT%20US%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22/our-partners/%22%20class%3D%22w3-bar-item%20w3-button%22%3E%3C/i%3E%20OUR%20PARTNERS%3C/a%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22javascript%3Avoid%280%29%22%20id%3D%22navbar-toggle%22%20class%3D%22material-symbols-outlined%20w3-bar-item%20w3-button%20w3-right%20w3-hide-large%20w3-hide-medium%22%20onclick%3D%22w3_open%28%29%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa%20fa-bars%22%3E%3C/i%3E%0A%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E%0A%20%20%3Cnav%20class%3D%22w3-sidebar%20w3-bar-block%20w3-black%20w3-card%20w3-animate-left%20w3-hide-medium%20w3-hide-large%22%20style%3D%22display%3Anone%22%20id%3D%22mySidebar%22%3E%0A%20%20%20%20%3Ca%20href%3D%22javascript%3Avoid%280%29%22%20onclick%3D%22w3_close%28%29%22%20class%3D%22w3-bar-item%20w3-button%20w3-large%20w3-padding-16%22%3EClose%20x%3C/a%3E%0A%20%20%20%20%3Ca%20href%3D%22/introduction/%22%20onclick%3D%22w3_close%28%29%22%20class%3D%22w3-bar-item%20w3-button%22%3EINTRODUCTION%3C/a%3E%0A%20%20%20%20%3Ca%20href%3D%22/about-us/%22%20onclick%3D%22w3_close%28%29%22%20class%3D%22w3-bar-item%20w3-button%22%3EABOUT%20US%3C/a%3E%0A%20%20%20%20%3Ca%20href%3D%22/our-partners/%22%20onclick%3D%22w3_close%28%29%22%20class%3D%22w3-bar-item%20w3-button%22%3EOUR%20PARTNERS%3C/a%3E%0A%20%20%3C/nav%3E%0A%20%20%0A%20%20%3Cbr%3E%3Cbr%3E%3Cbr%3E%0A%20%20%3Ch1%20class%3D%22w3-xxlarge%20w3-text-orange%22%20%3EABOUT%20US%3C/h1%3E%0A%20%20%3Cdiv%20id%3D%22text-container%22%20style%3D%22padding-left%3A%2010px%3B%20padding-right%3A%2010%25%3B%22%3E%0A%20%20%3Ch6%3E%0A%20%20%20%20M/S%20SKY%20Logistic%3Cbr%3E%3Cbr%3E%0A%20%20%20%20Year%20of%20Establishment%3A%202019%3Cbr%3E%0A%20%20%20%20Area%20of%20operation%3A%20PAN%20India%3Cbr%3E%0A%20%20%20%20Nature%20of%20operation%3A%20Truck/%20LPT/%20Trailor%20%3Cbr%3E%0A%20%20%20%20Proprietor%3A%20M/s%20SUBHASH%20CHANDRA%20DUBEY%3Cbr%3E%0A%20%20%20%20PAN%20NO%3A%20AYAPD0647P%3Cbr%3E%0A%20%20%20%20UDYOG%20ADHAR%3A%20GJ06D0008509%3Cbr%3E%0A%20%20%20%20E-Way%20Bill%20ID%3A%2024AYAPD0674P1ZE%0A%20%20%3C/h6%3E%0A%3C/div%3E%0A%20%20%3Cdiv%20id%3D%22btn-rdr-container%22%20style%3D%22padding%3A10px%22%3E%0A%20%3Cbutton%20onclick%3D%22pagerdr%28%29%22%20id%3D%22button-anim%22%3EGo%20back%3C/button%3E%0A%20%3C/div%3E%0A%3C/body%3E%0A%20%3Cscript%3E%0A%20%20%20function%20pagerdr%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20%22/%22%3B%20%0A%20%20%20%7D%0A%20%20%20var%20mySidebar%20%3D%20document.getElementById%28%22mySidebar%22%29%3B%0A%0Afunction%20w3_open%28%29%20%7B%0A%20%20if%20%28mySidebar.style.display%20%3D%3D%3D%20%27block%27%29%20%7B%0A%20%20%20%20mySidebar.style.display%20%3D%20%27none%27%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20mySidebar.style.display%20%3D%20%27block%27%3B%0A%20%20%7D%0A%7D%0A%0A//%20Close%20the%20sidebar%20with%20the%20close%20button%0Afunction%20w3_close%28%29%20%7B%0A%20%20%20%20mySidebar.style.display%20%3D%20%22none%22%3B%0A%7D%0A%20%3C/script%3E%0A%3C/html%3E"));
-    //-->
-    </script>
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us - Sky Logistic</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#navbar-toggle{
+    padding-right:20px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+h1,h2,h3,h4,h5,h6 {
+  padding-left: 50px;
+}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+ #header, body{
+   color:black !important;
+ }
+ #button-anim {
+    font-family: Raleway !important;
+  --c:  #d19b68; /* the color*/
+  color:#000;
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+#button-anim:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+  color:#fff;
+}
+#button-anim:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+#button-anim {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: .1em .6em;  
+  border: none;
+}
+</style>
+</head>
+<body oncontextmenu="return false;">
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <div class="w3-right w3-hide-small">
+        <a href="/introduction/" class="w3-bar-item w3-button">INTRODUCTION</a>
+        <a href="/about-us/" class="w3-bar-item w3-button"></i> ABOUT US</a>
+        <a href="/our-partners/" class="w3-bar-item w3-button"></i> OUR PARTNERS</a>
+      </div>
+      <a href="javascript:void(0)" id="navbar-toggle" class="material-symbols-outlined w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
+    <a href="/introduction/" onclick="w3_close()" class="w3-bar-item w3-button">INTRODUCTION</a>
+    <a href="/about-us/" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+    <a href="/our-partners/" onclick="w3_close()" class="w3-bar-item w3-button">OUR PARTNERS</a>
+  </nav>
+  
+  <br><br><br>
+  <h1 class="w3-xxlarge w3-text-orange" >ABOUT US</h1>
+  <div id="text-container" style="padding-left: 10px; padding-right: 10%;">
+  <h6>
+    M/S SKY Logistic<br><br>
+    Year of Establishment: 2019<br>
+    Area of operation: PAN India<br>
+    Nature of operation: Truck/ LPT/ Trailor <br>
+    Proprietor: M/s SUBHASH CHANDRA DUBEY<br>
+    PAN NO: AYAPD0647P<br>
+    UDYOG ADHAR: GJ06D0008509<br>
+    E-Way Bill ID: 24AYAPD0674P1ZE
+  </h6>
+</div>
+  <div id="btn-rdr-container" style="padding:10px">
+ <button onclick="pagerdr()" id="button-anim">Go back</button>
+ </div>
+</body>
+ <script>
+   function pagerdr() {
+    window.location.href = "/"; 
+   }
+   var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+ </script>
+</html>
