@@ -8,7 +8,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <style>
+#font-poppins{
+  font-family: poppins;
+}
 #navbar-toggle{
     padding-right:20px;
 }
@@ -87,19 +93,20 @@ body, html {
   </nav>
   
   <br><br><br>
-  <h1 class="w3-xxlarge w3-text-orange" >ABOUT US</h1>
+  <h1 class="w3-xxlarge w3-text-orange" style="padding-left: 4.5%;">ABOUT US</h1>
   <div id="text-container" style="padding-left: 10px; padding-right: 10%;">
   <h6>
-    M/S SKY Logistic<br><br>
-    Year of Establishment: 2019<br>
+  <b><i>M/S SKY Logistic</b></i><br><br>
+    Year of Establishment: <span id="font-poppins">2019</span><br>
     Area of operation: PAN India<br>
     Nature of operation: Truck/ LPT/ Trailor <br>
     Proprietor: M/s SUBHASH CHANDRA DUBEY<br>
-    PAN NO: AYAPD0647P<br>
-    UDYOG ADHAR: GJ06D0008509<br>
-    E-Way Bill ID: 24AYAPD0674P1ZE
+    PAN NO: <span id="font-poppins">AYAPD0647P</span><br>
+    UDYOG ADHAR: <span id="font-poppins">GJ06D0008509</span><br>
+    E-Way Bill ID: <span id="font-poppins">24AYAPD0674P1ZE</span>
   </h6>
 </div>
+<br><br>
   <div id="btn-rdr-container" style="padding:10px">
  <button onclick="pagerdr()" id="button-anim">Go back</button>
  </div>
